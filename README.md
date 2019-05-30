@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+**Models in Rails use a singular name, and their corresponding database tables use a plural name**
