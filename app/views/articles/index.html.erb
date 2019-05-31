@@ -1,5 +1,7 @@
 <h1>Listing Articles</h1>
 
+<%= link_to 'New article', new_article_path %>
+
 <table>
     <tr>
         <th>Title</th>
@@ -9,6 +11,8 @@
         <tr>
             <td><%= article.title %></td>
             <td><%= article.text %></td>
+            <td><%= link_to  "Show", article_path(article) %></td>
+            <td><%= link_to  "Edit", edit_article_path(article) %></td>
         </tr>
     <% end %>
 </table>
